@@ -1,4 +1,3 @@
-
 // when DOM is ready
 document.addEventListener('DOMContentLoaded', ()=>{
  // setup scroll into/out of view
@@ -37,4 +36,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
                  // threshold: 0.5 - trigger halfway visible 
   }).observe(trigger);
  });
-});
+}); 
