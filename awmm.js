@@ -1,4 +1,4 @@
-<script>
+
 // when DOM is ready
 document.addEventListener('DOMContentLoaded', ()=>{
  // setup scroll into/out of view
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if(entry.isIntersecting){ // on scroll into view
         document.querySelectorAll('.brand').forEach(target => target.classList.add('hide-brand'));
       }
-    });
+    });  
   },
   { 
     threshold: 0 // from which point to trigger
@@ -31,11 +31,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   },
   { 
-    threshold: 0.5 // from which point to trigger
+    threshold: 0 // from which point to trigger
                  // threshold: 0 - as soon as trigger is visible
                  // threshold: 1 - when trigger is fully visible
                  // threshold: 0.5 - trigger halfway visible 
   }).observe(trigger);
  });
 });
-</script>
